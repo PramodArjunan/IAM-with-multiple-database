@@ -35,8 +35,8 @@ public class AgentLoginAndPerformance extends HttpServlet
             {
                 String agent_email = request.getParameter("uname");
                 String agent_password = request.getParameter("psw");
-                String email="p";
-                String password="p";
+                String email="agent@gmail.com";
+                String password="agent";
                 if(agent_password.equals(password)&&agent_email.equals(email))
                 {
                     out.println("<h1>WELCOME ADMIN</h1>");  
