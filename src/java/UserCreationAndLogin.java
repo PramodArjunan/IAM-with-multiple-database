@@ -55,7 +55,7 @@ public class UserCreationAndLogin extends HttpServlet
                 UserCreation details_of_user=null;
                 int row=0;
                 ResultSet rs=null;
-                details_of_user=null;//TemporaryUserStorageInJvm.get(user_email);
+                details_of_user=TemporaryUserStorageInJvm.get(user_email);
                 Map<String,UserCreation> getting_all_users = new LinkedHashMap<>();
                 getting_all_users=TemporaryUserStorageInJvm.getall();
                 int size=getting_all_users.size();
