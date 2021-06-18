@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>agent_giving_access_to_user</servlet-name>
+        <servlet-class>AgentGivingAccessToUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>agent_login_and_performance</servlet-name>
+        <servlet-class>AgentLoginAndPerformance</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>user_creation_and_login</servlet-name>
+        <servlet-class>UserCreationAndLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>user_transactions</servlet-name>
+        <servlet-class>UserTransactions</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>agent_giving_access_to_user</servlet-name>
+        <url-pattern>/agent_giving_access_to_user</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>agent_login_and_performance</servlet-name>
+        <url-pattern>/agent_login_and_performance</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>user_creation_and_login</servlet-name>
+        <url-pattern>/user_creation_and_login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>user_transactions</servlet-name>
+        <url-pattern>/user_transactions</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
